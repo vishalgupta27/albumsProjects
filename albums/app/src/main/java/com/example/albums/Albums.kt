@@ -1,20 +1,24 @@
 package com.example.albums
 
 import android.annotation.SuppressLint
-
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.MenuItem
 import android.widget.Toast
+import androidx.annotation.NonNull
 import androidx.annotation.RequiresApi
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.retroproject.adapter.AlbumsAdapters
-
+import com.example.albums.adapters.AlbumsAdapters
+import com.example.albums.model.AlbumsModelsItem
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+
 
 class Albums : AppCompatActivity() {
     lateinit var adapters: AlbumsAdapters
@@ -22,6 +26,7 @@ class Albums : AppCompatActivity() {
 
 
 
+    @SuppressLint("MissingInflatedId")
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,6 +59,10 @@ class Albums : AppCompatActivity() {
         })
 
     }
-}
+
+    }
+
+
+
 
 

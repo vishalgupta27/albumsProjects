@@ -4,8 +4,9 @@ package com.example.albums
 import com.google.gson.annotations.SerializedName
 
 data class InforWeat(
-    @SerializedName("city")
-    var city: City,
+    @SerializedName("city") var city: City,
+    @SerializedName("list") var list: ArrayList<WeaList> = arrayListOf(),
+    @SerializedName("main") var main: Main
    /* @SerializedName("cnt")
     var cnt: Int,
     @SerializedName("cod")

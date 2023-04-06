@@ -1,4 +1,4 @@
-package com.example.retroproject.adapter
+package com.example.albums.adapters
 
 
 import android.annotation.SuppressLint
@@ -10,7 +10,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.albums.AlbumsModelsItem
+import com.example.albums.model.AlbumsModelsItem
 import com.example.albums.R
 
 
